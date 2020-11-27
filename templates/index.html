@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JnJ's travel & tours</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="landing-page">
+       
+        <div class="main-content">
+            <h1>JnJ's Travel & Tours</h1>
+            <h4>We'll work within your budget</h4>
+            
+            <form method="POST" action="/main">
+                <input name="province" list="provinces" type='text' placeholder="type a province to search">
+                    <datalist id="provinces">
+                        <option value="Gauteng"></option>
+                        <option value="Limpopo"></option>
+                        <option value="Kwazulu Natal"></option>
+                        <option value="Western Cape"></option>
+                        <option value="Northern Cape"></option>
+                        <option value="Eastern Cape"></option>
+                        <option value="Freestate"></option>
+                        <option value="Mpumalanga"></option>
+                        <option value="North West"></option>
+                    </datalist>
+                <!-- <input type="submit" class="button" value="search"> -->
+                <input type="submit" value="Search" class="button">
+            </form>
+        </div>
+        <a href="/home" class="browse">Browse</a>
+        <a href="/contact" class="contact">CONTACT US</a>
+    </div>
+</body>
+</html>

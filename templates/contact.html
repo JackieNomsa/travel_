@@ -1,0 +1,13 @@
+{% extends 'layout.html'%}
+{% block body%}
+<div class="contact">
+    <h1>{{ title }}</h1>
+    <form method="POST" action="/callme">
+        <input type="text" placeholder="Enter your Name" name="name" required><br>
+        <input type="email" placeholder="enter your Email" name="email" required><br>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="type message here..." required></textarea><br>
+        <input type="submit">
+    </form>
+</div>
+
+{% endblock %}
